@@ -1,13 +1,14 @@
 .cuerpo{
     font-family: 'Noto Sans', sans-serif;
-    background-color: #eaeaea;
+    background-color: #a09696;
 }
 
 
 .container{
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
+
 
 .card{
     justify-content: center;
@@ -23,12 +24,12 @@ background-color: #27a844;
 }
 
 h1{
-    color: #a29ea0;
+    color: #000000;
     font-weight: 320;
 }
 
 h2{
-    color: #a29ea0;
+    color: #000000;
     margin: 20px;
     font-size: 20px;
 }
@@ -48,20 +49,17 @@ h2{
 }
 
 .resultado{
-    color: rgb(77, 77, 77);
+    color: rgb(0, 0, 0);
     font-weight: 600;
 }
 
 .portada{
-    background-color: #16a3b9;
+    background-color: #2a05b1;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     color: white;
 }
 
-img{
-    width: 90px;
-}
 
 .secciones{
     border-bottom: 1px solid #d0d0d0;
@@ -78,8 +76,9 @@ img{
 }
 
 h3{
-    font-weight: 400;
-    font-size: 22px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .izq{
@@ -123,9 +122,6 @@ b{
     margin-left: 8px;
 }
 
-.link{
-    color: blue;
-}
 
 a:hover{
     text-decoration: underline;
@@ -145,29 +141,30 @@ a:hover{
 }
 
 .emaildato{
-    background-color: #0278fa;
+    background-color: #08068f;
     padding: 2px 10px;
     border-radius: 7px;
 }
 
 .telefonodato{
-    background-color: #16a3b9;
+    background-color: #000000;
     padding: 2px 10px;
     border-radius: 7px;
 }
 
 .gusto{
-    background-color: #27a644;
+    background-color: #fbff00;
     padding: 2px 10px;
     border-radius: 7px;
+    color: black;
 }
 
 .porcentaje{
-    background-color: #da3743;
+    background-color: #ff0000;
     padding: 2px 10px;
     border-radius: 7px;
     color: white;
 }
 .ficha{
-    color: white;
+    color: rgba(0, 0, 0, 0.199);
 }
