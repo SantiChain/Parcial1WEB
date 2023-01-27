@@ -4,108 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANTIAGO CHAIN P1
-    </title>
+    <title>SANTIAGO CHAIN P2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
-<body class="cuerpo">
+<body class="cuerpo" onload="datos()">
     <div class="container text-center">
         <div>
             <div class="titulo">
-                &nbsp;
-                <h1 class="mb-20"><b>Web</b>Developer</h1>
+                <h1 class="mb-20 resultado">Resultado</h1>
             </div>
-            <div class="row justify-content-center">
-                <div class="card col-sm-5 text-center ">
-                    <form form action="registro.html" method="get">
+            <div class="justify-content-center alineacion">
+                <div class="card col-sm-5 text-center sombra">
+                    <div class="row portada secciones">
                         &nbsp;
-                    <h2>Formulario</h2>
-                    &nbsp;
-                    <div class="m-3">
-                        <div class="input-group mb-0.5">
-                            <input type="text" id="nombrecompleto" name="nombrecompleto" class="form-control" placeholder="Nombre completo" aria-label="Recipient's username"
-                                aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-user"></i></span>
+                        <div class="container nombre">
+                            <h1 id="nombreregistro" class="nombreregistro"></h1>
+                            <h1 class="ficha">Ficha</h1>
                         </div>
                     </div>
-                    <div class="m-3">
-                        <div class="input-group mb-0.5">
-                            <input type="email" id="emailinput" name="emailinput" class="form-control" placeholder="Email" aria-label="Recipient's username"
-                                aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-envelope"></i></span>
+                    <div class="datos row secciones text-center">
+                        <div class="izq col-6">
+                            <h3>Email</h3>
+                        </div>
+                        <div class="der col-6">
+                            <span id="emaildato" class="emaildato"></span>
                         </div>
                     </div>
-                    <div class="m-3">
-                        <div class="input-group mb-0.5">
-                            <input type="text" id="telefonoinput" name="telefonoinput" class="form-control" placeholder="Text" aria-label="Recipient's username"
-                                aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-phone"></i></span>
+                    <div class="datos row text-center secciones">
+                        <div class="izq col-6">
+                            <h3>Telefono</h3>
+                        </div>
+                        <div class="der col-6">
+                            <span id="telefonodato" class="telefonodato"></span>
                         </div>
                     </div>
-                    <div class="m-3">
-                        <div class="input-group mb-0.5">
-                            <input type="text" id="gusto" class="form-control" placeholder="" aria-label="Recipient's username"
-                                aria-describedby="button-addon2">
-                            <button type="button"  class="btn btn-outline-success" onclick="info()">Gustos</button>
+                    <div class="datos row text-center secciones">
+                        <div class="izq col-6">
+                            <h3>Gustos</h3>
+                        </div>
+                        <div class="der col-6">
+                            <span id="gusto" class="gusto"></span>
                         </div>
                     </div>
-                    <div class="row m-2">
-                        <div class="col-2  bandera text-center">
-                            <i class="far fa-flag"></i>
+                    <div class="datos row text-center secciones ultimo">
+                        <div class="izq col-6">
+                            <h3>Porcentaje %</h3>
                         </div>
-                        <div class="col-9 m-2">
-                            <table class="table table-bordered table-hover table-sortable" id="tab_logic">
-                                <thead>
-                                    <tr>
-                                        <th class="">
-                                            Gustos
-                                        </th>
-                                        <th class="">
-                                            %
-                                        </th>
-                                        <th class="">
-                                            Edit
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody id="body_tabla">
-                                </tbody>
-                            </table>
-
+                        <div class="der col-6">
+                            <spani id="porcentaje" class="porcentaje"></span>
                         </div>
                     </div>
-                    <div class="div1"></div>
-                    <div class="divs">
-                        <div class="div2"></div>
-                        <div class="div3"></div>
-                    </div>
-                    <div class="div4"></div>
-
-                    </form>
                 </div>
             </div>
-            <h2>2200147 - Santiago Andrés Chaín Santos</h2>
+            &nbsp;
+                <h2>2200147 - Santiago Andrés Chaín Santos</h2>
         </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="datos.js"></script>
 </body>
 </html>
