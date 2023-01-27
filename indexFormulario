@@ -24,7 +24,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="card col-sm-5 text-center ">
-                    <form form action="registro.html" method="get">
+                    <form form action="indexRegistro.html" method="get">
                         &nbsp;
                     <h2>Formulario</h2>
                     &nbsp;
